@@ -1,5 +1,6 @@
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
+<<<<<<< HEAD
 import HomeScreen from "./src/screens/HomeScreen";
 import ComponentScreen from './src/screens/ComponentScreen';
 import ListScreen from "./src/screens/ListScreen";
@@ -22,6 +23,18 @@ const navigator = createStackNavigator(
     initialRouteName: "Home",
     defaultNavigationOptions: {
       title: "App",
+=======
+import CardScreen from "./src/screens/CardScreen";
+
+const navigator = createStackNavigator(
+  {
+    Card: CardScreen,
+  },
+  {
+    initialRouteName: "Card",
+    defaultNavigationOptions: {
+      headerShown: false,
+>>>>>>> e59ab03e86154dd4b9c1030fa5b611f5721f7990
     },
   }
 );
