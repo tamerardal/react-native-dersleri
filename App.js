@@ -1,24 +1,15 @@
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
-
-import HomeScreen from "./src/screens/HomeScreen";
-import ComponentScreen from "./src/screens/ComponentScreen";
-import ListScreen from "./src/screens/ListScreen";
-import IAmRichScreen from "./src/screens/IAmRichScreen";
-import IAmPoorScreen from "./src/screens/IAmPoorScreen";
+import CardScreen from "./src/screens/CardScreen";
 
 const navigator = createStackNavigator(
   {
-    Home: HomeScreen,
-    Component: ComponentScreen,
-    ListScreen: ListScreen,
-    IAmRichScreen: IAmRichScreen,
-    IAmPoorScreen: IAmPoorScreen,
+    Card: CardScreen,
   },
   {
-    initialRouteName: "IAmPoorScreen",
+    initialRouteName: "Card",
     defaultNavigationOptions: {
-      title: "Sefalet Köpek",
+      headerShown: false,
     },
   }
 );
